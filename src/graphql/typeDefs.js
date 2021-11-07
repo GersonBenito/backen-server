@@ -41,9 +41,9 @@ const typeDefs = gql`
         # categoia
         deleteCategoria(_id: ID!): Response!,
 
-        addCategoria(post: PostCategoria): Response!,
+        addCategoria(post: PostCategoria!): Response!,
 
-        updateCategoria(_id: ID!, data: PostCategoria): Response!
+        updateCategoria(_id: ID!, data: PostCategoria!): Response!
 
         # inventario
         
