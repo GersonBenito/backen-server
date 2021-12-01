@@ -5,7 +5,8 @@ const typeDefs = gql`
     type Categoria {
         _id: ID!,
         nombre: String!,
-        color: String!                                  
+        color: String!,
+        fechaIngreso: String!                                 
     }
 
     type Inventario {
@@ -19,7 +20,8 @@ const typeDefs = gql`
 
     input PostCategoria {
         nombre: String,
-        color: String
+        color: String,
+        fechaIngreso: String,
     }
 
     type Response {
